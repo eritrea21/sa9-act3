@@ -1,18 +1,7 @@
-require 'rspec'
-class MyClass
-    def initialize
-        @variable = 0
+require_relative 'oop_class'
 
-    end
-    def my_method
-        @variable += 1
-    end
-    def get_variable
-        @variable
-    end
-end
 
-# RSpec tests
+# RSpec test
 RSpec.describe MyClass do
     describe "#initialize" do
        it "intializes the variable to 0" do
